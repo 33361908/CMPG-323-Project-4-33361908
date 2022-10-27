@@ -93,7 +93,7 @@
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">200,119.02</av:Point>
             <av:Size x:Key="ShapeSize">200,62.4</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">300,181.42 300,226.39999999999998</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">300,181.42 300,211.42000000000002 290,211.42000000000002 290,226.39999999999998</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,62.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login.xaml">
@@ -109,21 +109,24 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:InvokeWorkflowFile>
         <FlowStep.Next>
-          <FlowDecision x:Name="__ReferenceID0" Condition="[bloginSuccess]" DisplayName="Flow Decision - Login True / False" sap:VirtualizedContainerService.HintSize="160,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+          <FlowDecision x:Name="__ReferenceID0" DisplayName="Login True / False" sap:VirtualizedContainerService.HintSize="97.6,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <FlowDecision.Condition>
+              <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="bloginSuccess=False" />
+            </FlowDecision.Condition>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <av:Point x:Key="ShapeLocation">220,226.39999999999998</av:Point>
-                <av:Size x:Key="ShapeSize">160,87.2</av:Size>
-                <av:PointCollection x:Key="FalseConnector">380,270 410,270 410,260</av:PointCollection>
-                <av:PointCollection x:Key="TrueConnector">220,270 220,250 200,250</av:PointCollection>
+                <av:Point x:Key="ShapeLocation">241.2,226.39999999999998</av:Point>
+                <av:Size x:Key="ShapeSize">97.6,87.2</av:Size>
+                <av:PointCollection x:Key="FalseConnector">338.79999999999995,270 368.79999999999995,270 368.79999999999995,380 410,380</av:PointCollection>
+                <av:PointCollection x:Key="TrueConnector">241.2,270 211.2,270 211.2,380 210,380</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <FlowDecision.True>
               <FlowStep x:Name="__ReferenceID2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">0,218.8</av:Point>
+                    <av:Point x:Key="ShapeLocation">10,348.8</av:Point>
                     <av:Size x:Key="ShapeSize">200,62.4</av:Size>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -143,7 +146,7 @@
               <FlowStep x:Name="__ReferenceID1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">410,228.79999999999998</av:Point>
+                    <av:Point x:Key="ShapeLocation">410,348.8</av:Point>
                     <av:Size x:Key="ShapeSize">200,62.4</av:Size>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
